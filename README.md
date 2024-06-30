@@ -29,7 +29,7 @@ Returns the number of alphabetic code-points processed.
 
 ## Using the library
 
-provided as libStringFuncs.so &nbsp;|&nbsp; Modify provided Makefile and recompile to dylib for MacOS
+provided as libStringFuncs.so 
 
 gcc link command *__-lStringFuncs__* 
 
