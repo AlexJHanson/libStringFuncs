@@ -32,3 +32,6 @@ Returns the number of alphabetic code-points processed.
 provided as libStringFuncs.so &nbsp;|&nbsp; Modify provided Makefile and recompile to dylib for MacOS
 
 gcc link command *__-lStringFuncs__* 
+
+## Dependencies
+Depends on libIOlibrary.so | @ https://github.com/AlexJHanson/AssemblyIOLib
