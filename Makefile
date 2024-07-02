@@ -31,7 +31,7 @@ EXEC_LIBS :=  -lStringFuncs -lIOLibrary
 
 EXEC_LIBS_PATHS := -L$(BIN_DIR) -L$(LIB_IO) 
 
-INCLUDES := -I${INCLUDE_DIR} -I${LIB_IO_INCLUDE}
+INCLUDES := -I$(INCLUDE_DIR) -I$(LIB_IO_INCLUDE)
 
 # Default target
 # Build shared library and delete temp objs folder
@@ -64,7 +64,7 @@ run: $(EXECUTABLE)
 
 # Compile driver.c, create SringFuncs library, and link with shared library
 $(EXECUTABLE): $(LIBRARY) driver.c | $(OBJ_DIR)
-	$(CC) $(CFLAGS) ${EXEC_LIBS_PATHS} ${INCLUDES}  driver.c -o $(EXECUTABLE) $(EXEC_LIBS)
+	$(CC) $(CFLAGS) $(EXEC_LIBS_PATHS) $(INCLUDES)  driver.c -o $(EXECUTABLE) $(EXEC_LIBS)
 
 .PHONY: all clean run
 
