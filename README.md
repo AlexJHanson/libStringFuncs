@@ -32,6 +32,3 @@ Returns the number of alphabetic code-points processed.
 provided as libStringFuncs.so 
 
 gcc link command *__-lStringFuncs__* 
-
-## Dependencies
-Depends on libIOlibrary.so | @ https://github.com/AlexJHanson/AssemblyIOLib
